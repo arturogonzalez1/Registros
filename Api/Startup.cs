@@ -38,6 +38,9 @@ namespace Api
 
             services.AddTransient<IVisitaService, VisitaService>();
             services.AddTransient<IVisitaRepository, VisitaRepository>();
+
+            services.AddTransient<IPersonalService, PersonalService>();
+            services.AddTransient<IPersonalRepository, PersonalRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

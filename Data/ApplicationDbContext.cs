@@ -11,6 +11,7 @@ namespace Data
         }
 
         public virtual DbSet<Visita> Visitas { get; set; }
+        public virtual DbSet<Personal> Personal { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
